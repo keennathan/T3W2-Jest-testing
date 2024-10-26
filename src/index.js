@@ -1,4 +1,4 @@
-const { niceLogger, messageRepeater } = require("./niceLogger.js");
+var { niceLogger, messageRepeater } = require("./niceLogger.js");
 
 // Import the File
 // const niceLoggerFile = require("./niceLogger.js"); 

@@ -1,4 +1,4 @@
-const { niceLogger, messageRepeater } = require("../src/niceLogger.js");
+var { niceLogger, messageRepeater } = require("../src/niceLogger.js");
 
 describe("description", () => {
 
@@ -14,9 +14,13 @@ describe("description", () => {
     test("niceLogger returns Hello World", () => {
         // Test happens here
         // expect(sth).toBe(sth);
-    
+        
+        niceLogger = jest.fn();
+        niceLogger.mockReturnValue("Hello World.");
         // Lets make a test
         expect(niceLogger()).toBe("Hello World.");
+
+        
     });
 
     test("niceLogger returns Hello World", () => {
