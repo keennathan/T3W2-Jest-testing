@@ -9,8 +9,14 @@ function sampleTest() {
 
 function messageRepeater(messageToRepeat){
     // message repeater functionality
-    // stmts
-}
+    if (Array.isArray(messageToRepeat)){
+        // sth
+        return [...messageToRepeat, ...messageToRepeat, ...messageToRepeat];
+    }
+    else {
+    let stringMessageToRepeat = messageToRepeat.toString();
+    return stringMessageToRepeat + stringMessageToRepeat + stringMessageToRepeat;
+}}
 
 module.exports = {
     niceLogger,
